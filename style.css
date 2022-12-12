@@ -1,26 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 body {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #d59c00;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(0, 0, 0);
+    background: var(--white);
+}
+
+#toggle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-width: 1px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.dark {
+    --black: #ffffff;
+    --white: #000000;
+    --orange: #00367d;
+    transition: 1s;
+}
+
+#toggle:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 input {
-    color: rgb(255, 255, 255);
+    color: var(--black);
     padding: 17px;
     outline: none;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
-    border-radius: 25%;
+    border-radius: 30%;
 }
 
 .num {
     width: 64px;
     height: 67px;
+    margin-top: 3px;
 }
 
 .text {
@@ -48,23 +79,25 @@ input {
 }
 
 .maincolor {
-    background-color: rgba(44, 47, 26, 0.172);
-    border-color: rgba(255, 255, 255, 0.132);
-    border-width: 0.1px;
+    background-color: var(--white);
+    border-color: var(--black);
+    border-width: 1px;
 }
 
 .maincolor:hover {
     transform: scale(1.05);
     transition: 0.15s;
-    background-color: rgba(165, 165, 165, 0.353);
+    background-color: var(--white);
 }
 
 .side {
-    background-color: rgb(143, 131, 0)
+    background-color: var(--orange);
+    border-width: 1px;
+    border-color: var(--black);
 }
 
 .side:hover {
-    background-color: rgb(139, 66, 20);
+    background-color: var(--white);
     transform: scale(1.05);
     transition: 0.15s;
 }
