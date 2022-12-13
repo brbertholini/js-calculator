@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
+
 body {
     --white: #ffffff;
     --black: #000000;
@@ -11,13 +12,19 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--white);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1066%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c59 C 96%2c126.4 288%2c359 480%2c396 C 672%2c433 768%2c259.2 960%2c244 C 1152%2c228.8 1248%2c328.6 1440%2c320 C 1632%2c311.4 1824%2c224.8 1920%2c201L1920 1080L0 1080z' fill='rgba(217%2c 217%2c 217%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c938 C 128%2c908 384%2c805 640%2c788 C 896%2c771 1024%2c854.6 1280%2c853 C 1536%2c851.4 1792%2c794.6 1920%2c780L1920 1080L0 1080z' fill='rgba(203%2c 203%2c 203%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1066'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #toggle {
     width: 30px;
     height: 30px;
     background-color: var(--white);
-    border-width: 1px;
+    border-width: 0px;
     border-radius: 50%;
     margin-bottom: 10px;
     padding-bottom: 2px;
@@ -29,7 +36,7 @@ body {
     --black: #ffffff;
     --white: #000000;
     --orange: #00367d;
-    transition: 1s;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c238 C 76.8%2c249.6 230.4%2c291.6 384%2c296 C 537.6%2c300.4 614.4%2c254.2 768%2c260 C 921.6%2c265.8 998.4%2c326.8 1152%2c325 C 1305.6%2c323.2 1382.4%2c251 1536%2c251 C 1689.6%2c251 1843.2%2c310.2 1920%2c325L1920 1080L0 1080z' fill='rgba(8%2c 8%2c 8%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c800 C 128%2c842.8 384%2c1027 640%2c1014 C 896%2c1001 1024%2c768 1280%2c735 C 1536%2c702 1792%2c826.2 1920%2c849L1920 1080L0 1080z' fill='rgba(12%2c 12%2c 12%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 #toggle:hover {
@@ -81,18 +88,18 @@ input {
 .maincolor {
     background-color: var(--white);
     border-color: var(--black);
-    border-width: 1px;
+    border-width: 0px;
 }
 
 .maincolor:hover {
     transform: scale(1.05);
     transition: 0.15s;
-    background-color: var(--white);
+    background-color: #ffffff00;
 }
 
 .side {
     background-color: var(--orange);
-    border-width: 1px;
+    border-width: 0px;
     border-color: var(--black);
 }
 
@@ -101,4 +108,3 @@ input {
     transform: scale(1.05);
     transition: 0.15s;
 }
-
